@@ -27,3 +27,4 @@
 
 #define setCenterX(__view__, __x__) { __view__.center = CGPointMake(__x__, __view__.center.y); }
 #define setCenterY(__view__, __y__) { __view__.center = CGPointMake(__view__.center.x, __y__); }
+#define centerView(__viewA__) { __viewA__.frame = CGRectMake(__viewA__.superview.frame.size.width/2.f - __viewA__.frame.size.width/2.f, __viewA__.superview.frame.size.height/2.f - __viewA__.frame.size.height/2.f, __viewA__.frame.size.width, __viewA__.frame.size.height); }
